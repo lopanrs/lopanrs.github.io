@@ -1,0 +1,160 @@
+/*!
+ * Copyright (c) Atomi Systems, Inc. All rights reserved.
+ * Version: 9.1.3
+ * Date: 2023.10.31
+ */
+#uXEDq5S2 .ap-focused {
+	outline: 1px dashed black;
+	outline-offset: 1px;
+}
+#uXEDq5S2 p {
+	margin: 0;
+}
+#uXEDq5S2 ol,ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#uXEDq5S2 {
+	-webkit-tap-highlight-color: transparent;
+}
+@font-face{
+    font-family: 'Bahnschrift SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Bahnschrift SemiBold'),
+         url('resources/font_0.woff');
+}
+@font-face{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Georgia'),
+         url('resources/font_1.woff');
+}
+@font-face{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Georgia Bold'),
+         url('resources/font_2.woff');
+}
+@font-face{
+    font-family: 'Lucida Console';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lucida Console'),
+         url('resources/font_3.woff');
+}
+@font-face{
+    font-family: 'Lucida Fax';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lucida Fax'),
+         url('resources/font_4.woff');
+}
+@font-face{
+    font-family: 'Lucida Fax';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lucida Fax Italic'),
+         url('resources/font_5.woff');
+}
+@font-face{
+    font-family: 'Lucida Fax';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Lucida Fax'),
+         url('resources/font_6.woff');
+}
+@font-face{
+    font-family: 'Lucida Fax';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Lucida Fax Italic'),
+         url('resources/font_7.woff');
+}
+@font-face{
+    font-family: 'Lucida Sans Unicode';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lucida Sans Unicode'),
+         url('resources/font_8.woff');
+}
+@font-face{
+    font-family: 'Microsoft Sans Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Microsoft Sans Serif'),
+         url('resources/font_9.woff');
+}
+@font-face{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tahoma'),
+         url('resources/font_10.woff');
+}
+@font-face{
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Trebuchet MS'),
+         url('resources/font_11.woff');
+}
+@font-face{
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Trebuchet MS Bold'),
+         url('resources/font_12.woff');
+}
+
+
+
+
+/* Hotspot animation */
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	45% {
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+
+.ap-hotspot {
+	position: absolute;
+	transition: all .3s ease;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.ap-hotspot .hs-ring {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid;
+	margin: -1px auto auto -1px;
+	opacity: 0;
+	pointer-events: none;
+	animation: pulsate 3s ease-out infinite;
+}
+
+.ap-hotspot:hover .hs-ring {
+	animation: none;
+}
+
+
+.ap-select::-ms-expand {
+	display: none;
+}
+
+table, th, td {
+	border-collapse: collapse;
+}
